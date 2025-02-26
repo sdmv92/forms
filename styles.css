@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'Norse';
+    src: url('fonts/Norse-Bold.woff2') format('woff2'),
+        url('fonts/Norse-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+form {
+    font-weight:500;
+    font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+}
+
+div.form {
+    margin-bottom:2%;
+    padding-bottom: 3%;
+    background-color: white;
+    padding-left: 6%;
+    box-shadow: 1px 1px 6px rgb(218, 218, 218);
+}
+.fields{
+    margin-bottom: 10px;
+}
+
+.fields>div{
+    margin-bottom: 4px;
+}
+
+input:focus{
+    box-shadow:1px 1px 6px 2px rgb(77, 131, 247) ;
+}
+input{
+    width: 200px;
+    height: 24px;
+    outline-style: none;
+    border-radius: 5px;
+    transition: 0.5s;
+    border: 1px solid #E5E7EB;
+}
+
+:required:invalid:focus{
+    box-shadow: 1px 1px 5px 2px rgb(250, 119, 119);
+}
+img {
+    height: 100vh;
+    width: auto;
+}
+
+.logoimage{
+    height: 70%;
+    margin: auto;
+    margin-right: 0;
+}
+
+p.logotxt{
+    font-family: 'Norse', sans-serif;
+    color: white;
+    font-size: 4lh;
+    margin: auto;
+    margin-left: 0;
+}
+
+p{
+    font-size: 24px;
+}
+
+#container {
+    display: flex;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    justify-content: center;
+    background-color: rgb(250, 250, 250);
+}
+
+#bgimage{
+    position: relative;
+}
+
+.logobg{
+    position: absolute;
+    top: 25%;
+    height: 200px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    flex-shrink: 0;
+}
+
+.already {
+    font-size: 16px;
+}
+
+button {
+    border: none;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #596D48;
+    color: white;
+    box-shadow: 1px 1px 2px 1px #596D48;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: #596D48;
+}
+
+.content{
+    padding-left: 6%;
+    width: 70%;
+}
+
+.buttons{
+    padding-left: 6%;
+}
+
+#bgimage>img{
+    display: block;
+}
